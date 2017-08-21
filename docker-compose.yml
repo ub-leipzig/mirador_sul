@@ -1,0 +1,17 @@
+version: "2.1"
+
+services:
+  mirador-sul:
+    image: ubl2/mirador_sul
+    container_name: mirador-sul
+    ports:
+      - "80:4000"
+    volumes:
+      - mirador-volume:/usr/src/app/db
+
+volumes:
+  mirador-volume:
+    driver_opts:
+          type: none
+          device: /mnt/mirador-data
+          o: bind
