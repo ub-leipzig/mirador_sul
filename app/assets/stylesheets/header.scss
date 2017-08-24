@@ -1,5 +1,5 @@
 
-@include bg-variant('.bg-stanford', $color-cardinal-red);
+@include bg-variant('.bg-stanford', $color-ubl-blue);
 
 .bg-stanford {
   .nav-item{
@@ -22,7 +22,7 @@
 .messages {
   float: left;
   position: absolute;
-  top: 0px;
+  top: 0;
   z-index: 10;
   width: 100%;
 

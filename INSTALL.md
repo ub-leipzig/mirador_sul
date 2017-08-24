@@ -3,6 +3,8 @@
 ## As `root`
 
 ```bash
+yum update
+localectl set-locale LANG=de_DE.utf8
 yum install yum-cron
 yum install -y yum-utils device-mapper-persistent-data lvm2
 yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
