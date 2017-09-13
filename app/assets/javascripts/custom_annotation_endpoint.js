@@ -87,6 +87,7 @@
     update: function(oaAnnotation, successCallback, errorCallback) {
       var annotation = this.getAnnotationInEndpoint(oaAnnotation),
       _this = this;
+      var annotationID = oaAnnotation['@id'];
 
       jQuery.ajax({
         url: _this.endpoint + '/' + annotationID,

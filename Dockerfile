@@ -1,13 +1,20 @@
 FROM ruby:2.4
 
+ENV MIRADOR_RAILS_VERSION 0.6.1
+ENV YARN_VERSION 0.27.5
+ENV NPM_CONFIG_LOGLEVEL info
+ENV NODE_VERSION 8.4.0
+
+ADD mirador_rails-${MIRADOR_RAILS_VERSION} /usr/local/bundle/gems/mirador_rails-${MIRADOR_RAILS_VERSION}
+RUN gem install bundler
 # throw errors if Gemfile has been modified since Gemfile.lock
-RUN bundle config --global frozen 1
+#RUN bundle config --global frozen 1
 
 RUN mkdir -p /usr/src/app
 WORKDIR /usr/src/app
 
 COPY Gemfile /usr/src/app/
-COPY Gemfile.lock /usr/src/app/
+#COPY Gemfile.lock /usr/src/app/
 RUN bundle install
 
 COPY . /usr/src/app
@@ -32,9 +39,6 @@ RUN set -ex \
     gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key" ; \
   done
 
-ENV NPM_CONFIG_LOGLEVEL info
-ENV NODE_VERSION 8.4.0
-
 RUN ARCH= && dpkgArch="$(dpkg --print-architecture)" \
   && case "${dpkgArch##*-}" in \
     amd64) ARCH='x64';; \
@@ -51,8 +55,6 @@ RUN ARCH= && dpkgArch="$(dpkg --print-architecture)" \
   && tar -xJf "node-v$NODE_VERSION-linux-$ARCH.tar.xz" -C /usr/local --strip-components=1 \
   && rm "node-v$NODE_VERSION-linux-$ARCH.tar.xz" SHASUMS256.txt.asc SHASUMS256.txt \
   && ln -s /usr/local/bin/node /usr/local/bin/nodejs
-
-ENV YARN_VERSION 0.27.5
 
 RUN set -ex \
   && for key in \
@@ -74,7 +76,9 @@ RUN set -ex \
 COPY config/puma.rb config/puma.rb
 
 RUN bin/rails db:migrate RAILS_ENV=development
+COPY entrypoint.sh /entrypoint.sh
+RUN chmod 700 /entrypoint.sh
 
 EXPOSE 4000
-
-CMD bundle exec puma -C config/puma.rb
+ENTRYPOINT [ "/entrypoint.sh" ]
+CMD ["puma -C config/puma.rb"]

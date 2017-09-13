@@ -13,10 +13,10 @@ gem 'config'
 gem 'faraday'
 gem 'high_voltage', '~> 3.0.0'
 gem 'devise'
-gem 'bootstrap', '~> 4.0.0.alpha6'
+gem 'bootstrap', '4.0.0.alpha6'
 gem 'jquery-rails'
 gem 'cancancan'
-gem 'mirador_rails'
+gem 'mirador_rails', :path => "/usr/local/bundle/gems/mirador_rails-0.6.1"
 gem 'sul_styles'
 
 # for asset pipeline

@@ -7,7 +7,7 @@ class CollectionsController < ApplicationController
 
   # GET /collections
   def index
-    @collections = Collection.accessible_by(current_ability)
+    @collections = Collection.accessible_by(current_ability).order(:name)
   end
 
   # GET /collections/1
