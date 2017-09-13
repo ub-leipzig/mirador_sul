@@ -1,8 +1,11 @@
 ##
 # Controller that handles Annotation CRUD
 class AnnotationsController < ApplicationController
+  protect_from_forgery prepend: true
   before_action :authenticate_user!
   load_and_authorize_resource
+
+  def show; end
 
   # GET /annotations
   def index
@@ -22,8 +25,16 @@ class AnnotationsController < ApplicationController
 
   # DELETE /annotation/:id
   def destroy
+    @annotation.user = current_user
     @annotation.destroy
     render status: :accepted, body: t('annotations.destroy')
+  end
+
+  # PATCH /annotation/:id
+  def update
+    @annotation.user = current_user
+    @annotation.update
+    render status: :accepted, body: t('annotations.update')
   end
 
   private

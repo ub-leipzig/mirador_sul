@@ -24,7 +24,7 @@ $(document).on('ready', function(){
     messageContainer.addClass('show');
     messageContainer.fadeIn('slow');
     autoCloseMessage();
-  }
+  };
 
   if (typeof myMiradorInstance !== 'undefined') {
     myMiradorInstance.eventEmitter.subscribe('mainMenuInitialized', function() {
@@ -34,7 +34,7 @@ $(document).on('ready', function(){
 
         var updateData = {
           "workspace": {
-            "data": JSON.stringify(currentConfig)
+            "data": JSON.stringify(currentConfig, replacer)
           }
         };
 
@@ -54,3 +54,32 @@ $(document).on('ready', function(){
     });
   }
 });
+
+function simpleStringify (object){
+    var simpleObject = {};
+    for (var prop in object ){
+        if (!object.hasOwnProperty(prop)){
+            continue;
+        }
+        if (typeof(object[prop]) === 'object'){
+            continue;
+        }
+        if (typeof(object[prop]) === 'function'){
+            continue;
+        }
+        simpleObject[prop] = object[prop];
+    }
+    return JSON.stringify(simpleObject);
+}
+
+seen = [];
+
+var replacer = function(key, value) {
+    if (value !== null && typeof value === "object") {
+        if (seen.indexOf(value) >= 0) {
+            return;
+        }
+        seen.push(value);
+    }
+    return value;
+};

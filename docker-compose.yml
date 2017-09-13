@@ -2,10 +2,10 @@ version: "2.1"
 
 services:
   mirador-sul:
-    image: ubl2/mirador_sul
+    image: ubl2/mirador-sul:0.0.2
     container_name: mirador-sul
     ports:
-      - "80:4000"
+      - "9000:4000"
     volumes:
       - mirador-volume:/usr/src/app/db
 
