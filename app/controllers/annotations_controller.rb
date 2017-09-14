@@ -1,8 +1,13 @@
 ##
 # Controller that handles Annotation CRUD
 class AnnotationsController < ApplicationController
-  before_action :authenticate_user!
+  protect_from_forgery with: :null_session
+  #before_action :authenticate_user!
+  before_action :set_annotation, only: [:show, :update, :destroy]
   load_and_authorize_resource
+
+  def show;
+  end
 
   # GET /annotations
   def index
@@ -20,13 +25,27 @@ class AnnotationsController < ApplicationController
     end
   end
 
-  # DELETE /annotation/:id
+  # DELETE /annotation/:uuid
   def destroy
     @annotation.destroy
-    render status: :accepted, body: t('annotations.destroy')
+  end
+
+  # PATCH /annotation/:uuid
+  def update
+    respond_to do |format|
+      if @annotation.update(annotation_params)
+        format.json {render json: @annotation, status: :ok}
+      else
+        format.json {render json: {status: :error}, status: :bad_request}
+      end
+    end
   end
 
   private
+
+  def set_annotation
+    @annotation = Annotation.where('uuid = ?', params[:uuid]).first
+  end
 
   def annotation_params
     params.require(:annotation).permit(:uuid, :data, :canvas)

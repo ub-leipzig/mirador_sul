@@ -1,7 +1,7 @@
 class Collection < ApplicationRecord
   validates :name, presence: true
 
-  default_scope { order(created_at: :desc) }
+  default_scope { order(name: :asc) }
 
   belongs_to :user
 

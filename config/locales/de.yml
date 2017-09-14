@@ -4,7 +4,7 @@ de:
     attributes:
       manifest:
         url: Manifest URL
-  application_name: mirador@uni-leipzig
+  application_name: mirador@ubleipzig
   version_text: alpha
   collections:
     navbar: Sammlungen
@@ -13,7 +13,7 @@ de:
     destroy: Die Sammlung wurde erfolgreich zerstört.
     show:
       manifests: Manifests
-      workspaces: Arbeitsräume
+      workspaces: Workspaces
     collection:
       create_workspace: Erstellen von Arbeitsbereich aus dieser Auflistung
       destroy: Zerstöre Sammlung
@@ -31,22 +31,22 @@ de:
     log_in: Einloggen
     log_out: Abmelden
   workspaces:
-    navbar: Arbeitsbereiche
-    create: Arbeitsbereich wurde erfolgreich erstellt.
-    create_error: Es gab ein Problem beim Erstellen des Arbeitsbereichs.
+    navbar: Workspaces
+    create: Workspace wurde erfolgreich erstellt.
+    create_error: Es gab ein Problem beim Erstellen des Workspaces.
     edit:
-      header: Arbeitsbereich bearbeiten
+      header: Workspace bearbeiten
     index:
-      header: Arbeitsbereiche
+      header: Workspaces
     new:
-      heading: Neuer Arbeitsbereich
+      heading: Neuer Workspace
     show:
-      heading: "Arbeitsbereich: %{name}"
-    update: Arbeitsbereich erfolgreich aktualisiert.
-    update_error: Es gab ein Problem beim Aktualisieren des Arbeitsbereichs.
+      heading: "Workspace: %{name}"
+    update: Workspace erfolgreich aktualisiert.
+    update_error: Es gab ein Problem beim Aktualisieren des Workspaces.
     workspace:
-      destroy: Arbeitsbereich löschen
-      edit: Arbeitsbereich bearbeiten
+      destroy: Workspace löschen
+      edit: Workspace bearbeiten
   annotations:
     create: Annotation wurde erfolgreich erstellt.
     create_error: Es gab ein Problem beim Erstellen der Annotation.
