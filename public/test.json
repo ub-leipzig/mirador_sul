@@ -1,0 +1,97 @@
+{
+  "@context": "http://iiif.io/api/presentation/2/context.json",
+  "@id": "http://localhost:9000/test.json",
+  "@type": "sc:Manifest",
+  "label": "Leipzig, UniversitÃ¤tsbibliothek Leipzig, Ms 349",
+  "attribution": "Provided by Leipzig University Library",
+  "logo": "https://iiif.ub.uni-leipzig.de/ubl-logo.png",
+  "related": [
+    "https://digital.ub.uni-leipzig.de/object/viewid/0000002057",
+    "https://iiif.ub.uni-leipzig.de/0000002057/manifest.json"
+  ],
+  "metadata": [
+    {
+      "label": "Titel (aus Signatur)",
+      "value": "Leipzig, UniversitÃ¤tsbibliothek Leipzig, Ms 349"
+    },
+    {
+      "label": "Objekttitel",
+      "value": "Theologische Sammelhandschrift, u. a. Beda Venerabilis"
+    },
+    {
+      "label": "Medium",
+      "value": "Handschrift"
+    },
+    {
+      "label": "Beschreibstoff",
+      "value": "Pergament"
+    },
+    {
+      "label": "Umfang",
+      "value": "142 Bll."
+    },
+    {
+      "label": "Abmessungen",
+      "value": "35 x 25,3 cm"
+    },
+    {
+      "label": "Sprache",
+      "value": "lateinisch"
+    },
+    {
+      "label": "Manuscripta Mediaevalia",
+      "value": "http://www.manuscripta-mediaevalia.de/dokumente/html/obj31562740"
+    },
+    {
+      "label": "Datierung",
+      "value": "Anfang des 13. Jahrhunderts"
+    },
+    {
+      "label": "Kitodo",
+      "value": "3010"
+    },
+    {
+      "label": "URN",
+      "value": "urn:nbn:de:bsz:15-0012-127140"
+    },
+    {
+      "label": "Signatur",
+      "value": "Ms 349"
+    }
+  ],
+  "sequences": [
+    {
+      "@id": "https://iiif.ub.uni-leipzig.de/0000002057/sequence/1",
+      "@type": "sc:Sequence",
+      "canvases": [
+        {
+          "@id": "https://purl.stanford.edu/md523vh5307/iiif/canvas/image_6",
+          "@type": "sc:Canvas",
+          "label": "Vorderdeckel",
+          "height": "4879",
+          "width": "3650",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "resource": {
+                "@id": "https://stacks.stanford.edu/image/iiif/gp178js1323%2Fgp178js1323_00_0002/full/full/0/default.jpg",
+                "@type": "dctypes:Image",
+                "label": "Vorderdeckel",
+                "format": "image/jpeg",
+                "height": "4879",
+                "width": "3650",
+                "service": {
+                  "@context": "http://iiif.io/api/image/2/context.json",
+                  "@id": "https://stacks.stanford.edu/image/iiif/gp178js1323%2Fgp178js1323_00_0002",
+                  "profile": "http://iiif.io/api/image/2/level1.json"
+                }
+              },
+              "on": "https://iiif.ub.uni-leipzig.de/0000002057/canvas/1"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

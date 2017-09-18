@@ -1,0 +1,63 @@
+{
+  "@context": "http://iiif.io/api/presentation/2/context.json",
+  "@id": "https://iiif.ub.uni-leipzig.de/0000000011/manifest.json",
+  "@type": "sc:Manifest",
+  "description": "neuer AK Karl-Sudhoff-Institut 1974-1999",
+  "label": "neuer AK Karl-Sudhoff-Institut 1974-1999",
+  "viewingHint": "paged",
+  "viewingDirection": "left-to-right",
+  "sequences": [
+    {
+      "@id": "httpd://iiif.ub.uni-leipzig.de/images/sequence",
+      "@type": "sc:Sequence",
+      "canvases": [
+        {
+          "@id": "https://iiif.ub.uni-leipzig.de/0000000011/canvas/00000000",
+          "@type": "sc:Canvas",
+          "label": "Abbe, Ernst",
+          "height": "704",
+          "width": "1024",
+          "images": [
+            {
+              "resource": {
+                "@id": "https://iiif.ub.uni-leipzig.de/fcgi-bin/iipsrv.fcgi?iiif=/j2k/0000/0000/0000000011/00000000.tif",
+                "@type": "dctypes:Image",
+                "format": "image/tiff",
+                "width": "1024",
+                "height": "704",
+                "label": "Abbe, Ernst, Abbe, Ernst",
+                "service": {
+                  "@id": "https://iiif.ub.uni-leipzig.de/fcgi-bin/iipsrv.fcgi?iiif=/j2k/0000/0000/0000000011/00000000.tif",
+                  "profile": "http://library.stanford.edu/iiif/image-api/1.1/conformance.html#level1"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "@id": "https://iiif.ub.uni-leipzig.de/0000000011/canvas/00000001",
+          "@type": "sc:Canvas",
+          "label": "00000001.tif",
+          "height": "704",
+          "width": "1024",
+          "images": [
+            {
+              "resource": {
+                "@id": "https://iiif.ub.uni-leipzig.de/fcgi-bin/iipsrv.fcgi?iiif=/j2k/0000/0000/0000000011/00000001.tif",
+                "@type": "dctypes:Image",
+                "format": "image/tiff",
+                "width": "1024",
+                "height": "704",
+                "label": "00000001.tif",
+                "service": {
+                  "@id": "https://iiif.ub.uni-leipzig.de/fcgi-bin/iipsrv.fcgi?iiif=/j2k/0000/0000/0000000011/00000001.tif",
+                  "profile": "http://iiif.io/api/image/2/level1.json"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

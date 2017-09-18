@@ -53,8 +53,8 @@ group :test, :development do
   gem 'coveralls', require: false
   gem 'simplecov'
   gem 'rack-console'
-  gem 'rubocop'
-  gem 'rubocop-rspec'
+  gem 'rubocop', "0.50.0"
+  gem 'rubocop-rspec', "1.17.0"
   gem 'capybara'
 end
 

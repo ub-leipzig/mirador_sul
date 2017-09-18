@@ -23,7 +23,7 @@ Gem::Specification.new do |spec|
 
   spec.add_dependency 'font-awesome-rails'
   spec.add_dependency 'material_icons'
-  spec.add_dependency 'openseadragon'
+  spec.add_dependency 'openseadragon', "0.4.0"
   spec.add_dependency 'jquery-rails'
   spec.add_dependency 'tinymce-rails'
   spec.add_dependency 'sass-rails'

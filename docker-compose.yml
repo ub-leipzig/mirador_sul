@@ -2,7 +2,7 @@ version: "2.1"
 
 services:
   mirador-sul:
-    image: ubl2/mirador-sul:0.0.3
+    image: ubl2/mirador-sul:0.0.4
     container_name: mirador-sul
     ports:
       - "9000:4000"

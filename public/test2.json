@@ -1,0 +1,176 @@
+{
+  "@context": "http://iiif.io/api/presentation/2/context.json",
+  "@id": "http://locahost:9000/test2.json",
+  "@type": "sc:Manifest",
+  "label": "Horae Beatae Mariae Virginis",
+  "attribution": "Provided by the Stanford University Libraries",
+  "logo": {
+    "@id": "https://stacks.stanford.edu/image/iiif/wy534zh7137%2FSULAIR_rosette/full/400,/0/default.jpg",
+    "service": {
+      "@context": "http://iiif.io/api/image/2/context.json",
+      "@id": "https://stacks.stanford.edu/image/iiif/wy534zh7137%2FSULAIR_rosette",
+      "profile": "http://iiif.io/api/image/2/level1.json"
+    }
+  },
+  "seeAlso": {
+    "@id": "https://purl.stanford.edu/gp178js1323.mods",
+    "format": "application/mods+xml"
+  },
+  "metadata": [
+    {
+      "label": "Title",
+      "value": "Horae Beatae Mariae Virginis"
+    },
+    {
+      "label": "Title",
+      "value": "Book of Hours"
+    },
+    {
+      "label": "Contributor",
+      "value": "Catholic Church"
+    },
+    {
+      "label": "Type",
+      "value": "Miniatures."
+    },
+    {
+      "label": "Date",
+      "value": "1450-1499"
+    },
+    {
+      "label": "Date",
+      "value": "latter half of 15th cent.]"
+    },
+    {
+      "label": "Language",
+      "value": "lat"
+    },
+    {
+      "label": "Language",
+      "value": "fle"
+    },
+    {
+      "label": "Format",
+      "value": "1 v. (109 leaves): vellum; 18 cm."
+    },
+    {
+      "label": "Description",
+      "value": "Included are the following parts: Calendar, Officium Sanctae Crucis, Horae de Sancto Spirito, Missa Beatae Mariae Virginis, Horae ... secundum Romanae Ecclesiae, Psalmi Poenitentiari, Vigilie mortuorum, Oratio, and, by a different hand, prayers of Saint Colette. The initials are particularly well executed, as are the borders."
+    },
+    {
+      "label": "Rights",
+      "value": "Open for research; material must be requested at least 24 hours in advance of intended use."
+    },
+    {
+      "label": "Description",
+      "value": "Purchased, 1939."
+    },
+    {
+      "label": "Description",
+      "value": "Books of Hours, derived from the Church's liturgy, were used by lay persons as personal prayer books to follow, in their own manner, the Church's program of daily devotion."
+    },
+    {
+      "label": "Description",
+      "value": "In Latin, with annotations in Flemish. Gothic minuscule script in three hands."
+    },
+    {
+      "label": "Subject",
+      "value": "Colette, 1381-1447"
+    },
+    {
+      "label": "Subject",
+      "value": "LiturgyCatholic Church"
+    },
+    {
+      "label": "Subject",
+      "value": "Catholic Church."
+    },
+    {
+      "label": "Subject",
+      "value": "Illumination of books and manuscripts, Renaissance"
+    },
+    {
+      "label": "Coverage",
+      "value": "Belgium"
+    },
+    {
+      "label": "Subject",
+      "value": "Illumination of books and manuscripts, Renaissance--Belgium"
+    },
+    {
+      "label": "Subject",
+      "value": "Initials--History"
+    },
+    {
+      "label": "Subject",
+      "value": "History"
+    },
+    {
+      "label": "Coverage",
+      "value": "Belgium"
+    },
+    {
+      "label": "Coverage",
+      "value": "To 1555"
+    },
+    {
+      "label": "Subject",
+      "value": "Painters"
+    },
+    {
+      "label": "Relation",
+      "value": "Reported to: Bibliothèque Nationale pre-1600 manuscript census."
+    },
+    {
+      "label": "PublishDate",
+      "value": "2017-04-26T16:21:23Z"
+    }
+  ],
+  "description": "Included are the following parts: Calendar, Officium Sanctae Crucis, Horae de Sancto Spirito, Missa Beatae Mariae Virginis, Horae ... secundum Romanae Ecclesiae, Psalmi Poenitentiari, Vigilie mortuorum, Oratio, and, by a different hand, prayers of Saint Colette. The initials are particularly well executed, as are the borders.",
+  "thumbnail": {
+    "@id": "https://stacks.stanford.edu/image/iiif/gp178js1323%2Fgp178js1323_00_0001/full/!400,400/0/default.jpg",
+    "@type": "dctypes:Image",
+    "format": "image/jpeg",
+    "service": {
+      "@context": "http://iiif.io/api/image/2/context.json",
+      "@id": "https://stacks.stanford.edu/image/iiif/gp178js1323%2Fgp178js1323_00_0001",
+      "profile": "http://iiif.io/api/image/2/level1.json"
+    }
+  },
+  "sequences": [
+    {
+      "@id": "https://purl.stanford.edu/gp178js1323#sequence-1",
+      "@type": "sc:Sequence",
+      "label": "Current order",
+      "canvases": [
+        {
+          "@id": "https://purl.stanford.edu/gp178js1323/iiif/canvas/gp178js1323_1",
+          "@type": "sc:Canvas",
+          "label": "Front outside board",
+          "height": 4879,
+          "width": 3650,
+          "images": [
+            {
+              "@id": "https://purl.stanford.edu/gp178js1323/iiif/annotation/gp178js1323_1",
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "resource": {
+                "@id": "https://stacks.stanford.edu/image/iiif/gp178js1323%2Fgp178js1323_00_0001/full/full/0/default.jpg",
+                "@type": "dctypes:Image",
+                "format": "image/jpeg",
+                "height": 4879,
+                "width": 3650,
+                "service": {
+                  "@context": "http://iiif.io/api/image/2/context.json",
+                  "@id": "https://stacks.stanford.edu/image/iiif/gp178js1323%2Fgp178js1323_00_0001",
+                  "profile": "http://iiif.io/api/image/2/level1.json"
+                }
+              },
+              "on": "https://purl.stanford.edu/gp178js1323/iiif/canvas/gp178js1323_1"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

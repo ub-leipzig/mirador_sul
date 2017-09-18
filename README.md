@@ -7,7 +7,7 @@ $ docker-compose up
 ```
 
 ### Image on Docker Hub
-[![](https://images.microbadger.com/badges/image/ubl2/mirador_sul.svg)](https://microbadger.com/images/ubl2/mirador_sul "ubl2/mirador_sul")[![](https://images.microbadger.com/badges/version/ubl2/mirador_sul.svg)](https://microbadger.com/images/ubl2/mirador_sul "ubl2/mirador_sul")
+[![](https://images.microbadger.com/badges/image/ubl2/mirador-sul.svg)](https://microbadger.com/images/ubl2/mirador-sul "ubl2/mirador-sul")[![](https://images.microbadger.com/badges/version/ubl2/mirador-sul.svg)](https://microbadger.com/images/ubl2/mirador-sul "ubl2/mirador-sul")
 
 ## Installation
 
